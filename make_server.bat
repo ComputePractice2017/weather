@@ -1,0 +1,1 @@
+docker build -t weather-server -f Dockerfile.server .
