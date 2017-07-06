@@ -1,0 +1,6 @@
+[submodule "weather-server"]
+	path = weather-server
+	url = https://github.com/ComputePractice2017/weather-server.git
+[submodule "weather-web"]
+	path = weather-web
+	url = https://github.com/ComputePractice2017/weather-web.git
