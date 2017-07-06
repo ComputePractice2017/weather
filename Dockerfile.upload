@@ -1,11 +1,10 @@
 FROM golang
 
-ADD weather-server /go/src/github.com/ComputePractice2017/weather-server 
-
-RUN go get "github.com/gorilla/mux"
 RUN go get "gopkg.in/gorethink/gorethink.v3"
+
+ADD weather-server /go/src/github.com/ComputePractice2017/weather-server 
 RUN go install github.com/ComputePractice2017/weather-server/getdata
 
-ENTRYPOINT /go/bin/weather-server/getdata
+ENTRYPOINT /go/bin/getdata
 
 EXPOSE 8000
